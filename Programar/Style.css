@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&family=Press+Start+2P&display=swap');
+
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background: #2a06aa;
+}
+
+#seleccionar-mascota{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.titulo {
+    color:white;
+    font-size: 32px;
+    font-family: 'Press Start 2P', cursive;
+}
+.subtitulo {
+    color:white;
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;   
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px 
+}
+
+.tarjeta-de-mokepon{
+    width: 220px;
+    height: 100px;
+    background: #3f5ad4;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid rgb(15, 15, 15);
+    font-size: 18px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+.tarjeta-de-mokepon:hover {
+    background: #340fb9;
+    border: 1px solid rgb(241, 238, 238);
+    
+}
+
+
+.tarjeta-de-mokepon img {
+
+    width: 113px;
+    height: 86px;
+    
+}
+
+#boton-mascota {
+
+    width: 113px;
+    height: 31px;
+    background: #42f108;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #0a0a0a;
+    font-size: 17px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+#boton-mascota:hover {
+    
+    background: #d0d9ff;
+}
+
+#seleccionar-ataque{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+.boton-de-ataque {
+    background-color: #3f5ad4;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 131px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.boton-de-ataque:hover {
+    
+    background: #9daae6;
+}
+#mensajes{
+    color: rgb(20, 19, 18);
+    background: rgb(228, 232, 235);
+    padding: 11px;
+    box-sizing: border-box;
+    height: 90px;
+    margin-top: 23px;
+    border-radius: 49px;
+    width: 472px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar{
+
+    background: rgb(21, 187, 238);
+    color: #080808;
+    border-radius: 68px;
+    width: 136px;
+    height: 23 px;
+    font-size: 14px;
+    border: none;
+    font-family: 'Press Start 2P';
+    
+}
+
+#boton-reiniciar:hover{
+
+    background-color: #340fb9;
+    color: white;
+    
+}
+
+.ataques{
+
+    display: grid;
+    grid-template-columns: 200px 200px;
+    text-align: center;
+}
+
+input{
+
+    display: none;
+}
+input:checked+label{
+
+    background-color: #5a42af;
+    color: white;
+    
+}
+
+
+
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#contenedor-botones {
+    
+        display: none;
+      
+      
+  }
+  #up {
+    
+        display: none;
+      
+      
+  }
+  
+  #left {
+    display: none;
+
+
+  }
+  
+  #down {
+    display: none;
+  }
+  
+  #right {
+    display: none;
+  }
+
+
+#up:hover, #left:hover, #down:hover, #right:hover {
+    background-color: #5c51f1;
+  }
+
+@media (max-width: 440px) {
+
+    .tarjetas{
+
+         flex-direction: column;
+    }
+
+    .botones-ataques {
+    display: flex;
+    flex-direction: column;
+    gap:10px
+        
+    }
+}
+
+
+
